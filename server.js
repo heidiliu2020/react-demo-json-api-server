@@ -180,7 +180,7 @@ server.all("/posts/:id", preventEditDefault);
 server.post(
   "/posts",
   requireLogin,
-  validator(["title", "image", "body"]),
+  validator(["title", "body"]),
   (req, res, next) => {
     req.body.userId = req.jwtData.userId;
     next();
@@ -189,7 +189,7 @@ server.post(
 server.put(
   "/posts/:id",
   requireLogin,
-  validator(["title", "image", "body", "createdAt", "userId"])
+  validator(["title", "body", "createdAt", "userId"])
 );
 
 // Use default router
