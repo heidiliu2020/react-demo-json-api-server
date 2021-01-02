@@ -42,8 +42,8 @@
   "users": [
     {
       "id": 1,
-      "nickname": "管理員",
       "username": "admin",
+      "nickname": "管理員",
       "password": "React"
     },
     {
