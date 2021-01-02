@@ -148,4 +148,4 @@ response:
 }
 ```
 
-相關用法請參考 json server 官方文件
+相關用法請參考 json server 官方文件。
