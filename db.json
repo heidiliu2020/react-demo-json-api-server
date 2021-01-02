@@ -63,6 +63,11 @@
       "username": "test",
       "nickname": "test",
       "password": "React"
+    },
+    {
+      "username": "admin",
+      "password": "React",
+      "id": "8kDHbhW"
     }
   ],
   "profile": {
