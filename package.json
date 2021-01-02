@@ -12,9 +12,8 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
-    "json-server": "^0.16.3",
+  "dependencies": {
+    "json-server": "^0.16.2",
     "jsonwebtoken": "^8.5.1"
   }
 }
