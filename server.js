@@ -173,7 +173,7 @@ server.post("/users", (req, res, next) => {
     message: "use /register instead",
   });
 });
-server.put("/users/:id", validator(["nickname", "username", "createdAt"]));
+server.put("/users/:id", validator(["nickname", "username"]));
 
 // required login
 server.all("/posts/:id", preventEditDefault);
@@ -186,11 +186,7 @@ server.post(
     next();
   }
 );
-server.put(
-  "/posts/:id",
-  requireLogin,
-  validator(["title", "body", "createdAt", "userId"])
-);
+server.put("/posts/:id", requireLogin, validator(["title", "body"]));
 
 // Use default router
 server.use(router);
